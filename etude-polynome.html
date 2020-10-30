@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <style>
+            h1 {
+                margin: 0;
+                padding-bottom: 65px;
+                text-align: center;
+            }
+
+            .result {
+                border: solid 1px red;
+                width: fit-content;
+            }
+
+            body {
+                margin: 0px;
+                margin-left: 199px;
+                background-image: url("./Lightblue_empty_grid.svg");
+                line-height: 20px;
+            }
+
+            .red-line {
+                padding-top: 80px;
+                padding-bottom: 80px;
+                padding-left: 20px;
+                border-left: solid 2px red;
+            }
+
+            .trace {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="red-line">
+            <h1>Etude du polynôme de second degrés P(x) = ax² + bx + c</h1>
+            <br>
+            Soit P(x) un polynôme de second dégrès de la forme : P(x) = ax² + bx + c, avec :
+            <br />
+            a = a
+            <br />
+            b = b
+            <br />
+            c = c
+            <h2>1. Je cherche mettre P(x) sous la forme d'une identité remarquable :</h2>
+                Au choix :
+                <br />
+                <br />
+                Si P(x) peut s'ecrire sous la forme (Ax + B)², alors :
+                <br />
+                P(x) = (Ax + B)² = A²x² + 2ABx + B²
+                <br />
+                <table>
+                    <tr><td>=></td><td>a = A²</td></tr>            
+                    <tr><td></td><td>b = 2AB</td></tr>
+                    <tr><td></td><td>c = B²</td></tr>
+                </table>
+                <table>
+                    <tr><td>=></td><td>A = sqrt(a)</td></tr>            
+                    <tr><td></td><td>B = sqrt(c)</td></tr>
+                    <tr><td></td><td>b = 2sqrt(a)sqrt(c)</td></tr>
+                </table>
+                <br />
+                P(x) peut donc s'écrire :
+                <br />
+                <div class="result">
+                    P(x) = (sqrt(a) + sqrt(c))²
+                </div>
+                <br />
+                <br />
+                ou
+                <br />
+                <br />
+                Si P(x) peut s'ecrire sous la forme (Ax - B)², alors :
+                <br />
+                P(x) = A²x² - 2ABx + B²
+                <br />
+                <table>
+                    <tr><td>=></td><td>a = A²</td></tr>            
+                    <tr><td></td><td>b = -2AB</td></tr>
+                    <tr><td></td><td>c > 0 et c = B²</td></tr>
+                </table>
+                <table>
+                    <tr><td>=></td><td>A = sqrt(a)</td></tr>            
+                    <tr><td></td><td>B = sqrt(c)</td></tr>
+                    <tr><td></td><td>b = -2sqrt(a)sqrt(c)</td></tr>
+                </table>
+                <br />
+                P(x) peut donc s'écrire :
+                <br />
+                <div class="result">
+                    P(x) = (sqrt(a) - sqrt(c))²
+                </div>
+                <br />
+                <br />
+                ou
+                <br />
+                <br />
+                Si P(x) peut s'ecrire sous la forme (Ax + Bx)(Ax - Bx), alors :
+                <br />
+                P(x) = (Ax + Bx)(Ax - Bx) = A²x² - B²
+                <br />
+                <table>
+                    <tr><td>=></td><td>a = A²</td></tr>            
+                    <tr><td></td><td>b = 0</td></tr>
+                    <tr><td></td><td>c < 0 et abs(c) = B²</td></tr>
+                </table>
+                <br />
+                P(x) peut donc s'écrire :
+                <br />
+                <div class="result">
+                P(x) = (sqrt(a) + sqrt(c))(sqrt(a) - sqrt(c))
+                </div>
+    
+            <h2>2. Je calcule le discriminant Δ de P(x) :</h2>
+                TODO
+            <h2>3. Je donne la forme canonique de P(x) :</h2>
+                TODO
+            <h2>4. Je résouds P(x) = 0 :</h2>
+                TODO
+            <h2>5. J'établis la tableau de signe de P(x) sur R :</h2>
+                TODO
+            <h2>6. Je trace P(x) :</h2>
+                TODO
+            <br />
+            <div class="trace">
+                <img src="./plot-image.png">
+            </div>
+        </div>
+    </body>
+</html>
