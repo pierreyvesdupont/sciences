@@ -1,5 +1,5 @@
 #import polynome_fonctions
-from polynome_fonctions import *
+from polynome import *
 from random import *
 #### 0. Définition des fonctions
 
@@ -43,9 +43,9 @@ if mode_de_génération == 1:
     Dessiner_courbe(polynome)
 
 elif mode_de_génération == 2:
-    A=int(input("quel est la valeur de a: "))
-    B=int(input("quel est la valeur de c: "))
-    C=int(input("quel est la valeur de f: "))
+    A=float(input("quel est la valeur de a: "))
+    B=float(input("quel est la valeur de c: "))
+    C=float(input("quel est la valeur de f: "))
 
     polynome = {"A": A, "B": B, "C": C}
     print("=> p(x) = "+str(A)+"x² + "+str(B)+"x + "+str(C))

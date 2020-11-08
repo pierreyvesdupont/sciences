@@ -5,13 +5,6 @@ print("taper 4 pour resoudre une dilution")
 resolution=input('que voulez-vous résoudre') 
 
 
-
-
-
-
-
-
-
 ####la quantitée de matière n = N / Na(6,02*10^23) 
 if resolution == 1:
     N=input("quel est le nombre de matière")
