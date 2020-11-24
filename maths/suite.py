@@ -156,9 +156,9 @@ def study_suite(suite):
 
 #study_suite(Suite(Suite.TYPE_ARITHMETICAL, SuiteTerm(3, 6), SuiteTerm(5, -2)))
 #study_suite(Suite(Suite.TYPE_GEOMETRICAL, SuiteTerm(3, 6), SuiteTerm(5, 2)))
-#study_suite(Suite("2*n + 1"))
+study_suite(Suite("2*n + 1"))
 #study_suite(Suite("u_n + 1", 9))
-study_suite(Suite("u_n * 0.6", 1))
+#study_suite(Suite("u_n * 2", 1))
 #study_suite(Suite("4 * 5**n"))
 
 #study_suite(Suite("(u_n + 2)**2 * 0.6", 1))
